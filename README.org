@@ -1,0 +1,7 @@
+* Midterms OOP reviewer
+* Table of contents;
+1. Java history
+2. Variables and data types
+3. Conditional statements
+4. Arrays
+5. Basic Object Oriented programming: Encapsulation and Inheritance

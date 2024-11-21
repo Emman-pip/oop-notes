@@ -1,0 +1,83 @@
+* Java Foundations
+
+
+** Java technology
+- *2020 marks 25 years* since the first version of java was released
+- is open source
+
+** Java's Evolution
+- Java 8
+  + released in 2014
+  + *brought lambda and Stram API* expressions to the Java platform
+  + most popular version of java in history
+ 
+** Oracle
+- Steward of Java
+- Java updates are focused in:
+  + readability and simplicity
+  + one language with the same meaning everywhere
+- moved to a 6 month time-based release (march and september)
+
+** History of java
+*** 1990
+- Sun Microsystems began research project to extend the power of network computing to consumer devices
+- green team
+  + team of highly skilled software developers at Sun
+  + under the leadership of James Gosling
+  + developed Java (originaly named Oak)
+- java enabled devices with different CPU architectures to share the same software through one programming language
+- Oak (early stage of java), was used for small applications (applets)
+
+*** 1995
+- netscape incorporated java into its browser
+- turning point for java
+  
+*** 2010
+- oracle acquired Sun Microsystems
+
+  
+* Duke, java mascot
+- official mascot of java
+- created by Joe Palrang
+
+  
+* Java Version History 17
+- JDK Alpha and Beta released in 1995
+- followed by JDK 1.0 (1996)
+- JDK 6 (2006)
+- JDK 7 (2011)
+- JDK 8 (2014)
+- since JDK 11, LTS versions fo JDK every 3 years, with JDK 11 (2018), and JDK 22 (2022)
+
+* Java Product Groups
+** Four Java technology product groups and their target group device types
+- java platform, Standard edition (Java SE)
+  + used to develop applciations that run on desktop computers
+- Jakarta EE, formerly java platform, Enterpeise edition (Java EE)
+  + used to create large enterprise, server-side and client-side distributed applications
+- Java Platform, Micro Edition (Java ME) - Java Card
+  + applications for devices with limited storage, display, and power capabilities
+- Java card
+  + used in mobile phone sims
+
+* How java works
+- it is a compile once, run everywhere type of shi
+- Java code -> Java compile -> java bytecode
+  + the java code can be run in every maching, regardless of the CPU architecture as long as there is a bytecode interpreter (Java virtual machine or JVM)
+- JVM
+  + interpreter of the Java bytecode
+  + has java class libraries that provide users with prewritten code 
+
+* Java Runtime Environment
+- includes:
+  + JVM
+  + java class libraries
+- purpose is to read bytecode anad run the same bytecode anywhere with a JVM
+  
+* JDK (java development kit)
+- includes:
+  + JRE
+  + Javac (java compiler)
+  + additional tools
+- purpose:
+  + compile bytecode (.java -> .class)
