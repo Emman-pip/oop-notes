@@ -1,0 +1,48 @@
+* Variables and data types
+
+* variables
+- used to store information, to be referenced and manipulated later
+
+* Data type
+- character (char)
+  + holds a single character
+- string
+  + holds a set of characters
+- boolean
+  + holds true of false values
+- float and double
+  + holds floating point numbers
+  + double has higher precision than float
+- integer
+  + java has multiple data types for integers (in ascending order): byte, short, int, long
+    
+* Declaring a variable
+- a variable in java must has three things:
+  1. data type
+  2. identifier
+  3. value (optional)
+     
+#+begin_src java
+int integerVariable; // declares variable without setting a value (simply initializinga a variable for later use or storing)
+String stringVariable = "This is a string" // a variable that declares data type, identifier, and initializes the vairable with a value
+
+// reassing or assigning values
+integerVariable = 10; // assigns 10 to the variable
+stringVariable = "new value"; // assign new value to the stringVariable
+#+end_src
+
+* Rules for identifiers
+- except "_" or underscore, no special characters are allowed
+- no whitespaces
+- cannot use numbers alone, cannot start with numbers
+
+* concatenation
+- process of joining string together with
+
+
+#+begin_src java
+  String s1 = "hello ";
+  String s2 = "world.";
+  String s3 = s1 + s2; // s3 will be "hello world."
+#+end_src
+
