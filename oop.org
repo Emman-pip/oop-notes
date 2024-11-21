@@ -1,0 +1,93 @@
+* Encapsulation and inheritance
+
+** Java Encapsulation
+- an oop technique used to hide data from direct access
+
+
+** encapsulation and its relation to access modifiers
+- encapsulation is implemented through access modifiers
+- access modifiers are essentially keywords that define how accessible something is (e.g. if something is private then it can only be used by the owner)
+- there are four access modifiers in java:
+  1. default
+  2. public
+  3. private
+  4. protected
+/for more information about access modifiers [[https://www.geeksforgeeks.org/access-modifiers-java/?ref=next_article][clickhere]]/
+
+#+begin_src java
+  class sampleClass { // default access modifier
+  // ...
+  }
+  public class sampleClass2 { // public access modifier
+  // ...
+  }
+  private class sampleClass3 { // private access modifier
+  // ...
+  }
+
+  protected class sampleClass4 { // protected access modifier
+      protected int integerHere;
+      private int integerAgain;
+      public int publicInteger;
+      int defaultInteger;
+  // ...
+  }
+#+end_src
+
+
+** Setters and getters
+- used to access encapsulated variables in a class (usually used to access variables with access methods of protected or private)
+- settter
+  + used to reassign or assign values of an encapsulated variable outside of the class
+- getter
+  + used to get encapsulated variables outside of the class
+
+#+begin_src java
+  public class SomeClass{
+      private int mySecretNumber = 0;
+
+      public void setMySecretNumber(int newSecretNumber)  {
+	mySecretNumber = newSecretNumber;
+      }
+
+      public int getMySecretNumber()  {
+	return mySecretNumber;
+      }
+  }
+
+  public class Main{
+    public static void main(String[] args){
+     SomeClass someClassObject = new SomeClass();
+     // this would not work since the mySecret number is private
+     someClassObject.mySecretNumber = 100;
+     // this would also cause an error
+     System.out.println(someClassObject.mySecretNumber);
+
+     // this would be the right way to set the mySecretnumber
+     someClassObject.setMySecretNumber(100);
+     // to print the secret number
+     System.out.println(someClassObject.getMySecretNumber());
+    }
+  }
+
+#+end_src
+** INHERITANCE
+- is a principle of object oriented programming that allows classes to inherit attributes and methods from other classes
+  
+*** Superclass
+- class where other classes inherit from
+  
+*** sub class
+- class that inherits from a superclass
+
+*** extends keyword
+- one of the keywords used in java to implement inheritance
+
+** inheritance example
+#+begin_src java
+  public class SuperClass{ // superclass
+  }
+
+  class SubClass extends SuperClass{// subclass
+  }
+#+end_src
