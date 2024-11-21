@@ -1,0 +1,13 @@
+* Conditional statements
+allows programs to take action based on given conditions
+
+* Relational operators
+- ==
+- !=
+- <
+- <=
+- >=
+- >
+
+
+*/ewan... wala naman notable ih/*
